@@ -1,0 +1,27 @@
+1,vu,10
+1,vu,10
+1,vu,10
+1,vu,10
+2,vu,9
+3,vu,8
+Student ID: 1
+Student Name: vu
+Grade: 10
+Student ID: 1
+Student Name: vu
+Grade: 10
+Student ID: 2
+Student Name: vu
+Grade: 9
+Student ID: 1
+Student Name: vu
+Grade: 10
+Student ID: 1
+Student Name: vu
+Grade: 10
+Student ID: 2
+Student Name: vu
+Grade: 9
+Student ID: 3
+Student Name: vu
+Grade: 8

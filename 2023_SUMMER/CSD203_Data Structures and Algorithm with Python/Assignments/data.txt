@@ -1,0 +1,9 @@
+001, Pham Van A, 8, 8, 8
+002, Pham Van B, 9, 8, 9
+003, Pham Van C, 9, 9, 9
+004, Pham Van D, 8, 8, 8
+005, Pham Van E, 6, 7, 7
+006, Pham Van F, 7, 7, 8
+007, Pham Van G, 6, 7, 8
+008, Pham Van H, 7, 8, 9
+009, Pham Van I, 8, 9, 10

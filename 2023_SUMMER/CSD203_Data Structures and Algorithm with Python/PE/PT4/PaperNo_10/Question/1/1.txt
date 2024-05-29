@@ -1,0 +1,28 @@
+Question 1:(4 marks)
+In this question you should complete some methods in MyList.py file. 
+The class Student with 2 data members: Name and Age is given and you do not need to edit it. The MyList class is a linked list of Student objects. The following methods should be completed:
+
+•	void addLast(self, name, age) - check if name start with “Z” or age > 120 then do nothing, otherwise add new Student with Name=name, Age=age to the first of the list. (Age can get arbitrary value, even negative).
+
+•	void f1() – This method is used to test the addFirst methode above. You do not need to edit this function. Output in this case like that:
+OUTPUT
+(YX, 100) (X, 30) (F, 26) (E, 52) (C, 43) (B, 23) (A, 15)
+FINISH
+
+•	void f2() – There are given objects Z. You should write statements in method addNode(self, name, age) so that Z will be after the last student having age is an even number. Output in this case like that:
+OUTPUT
+(YX, 51) (X, 30) (F, 26) (E, 52) (C, 101) (D, 43) (B, 23) (A, 15) 
+(YX, 51) (X, 30) (F, 26) (E, 52) (Z, 20) (C, 101) (D, 43) (B, 23) (A, 15)
+FINISH
+
+•	void f3() – Delete the first node having age is a square number. Output in this case like that:
+OUTPUT
+(YX, 51) (X, 30) (F, 36) (E, 52) (C, 101) (D, 43) (B, 23) (A, 25) 
+(YX, 51) (X, 30) (E, 52) (C, 101) (D, 43) (B, 23) (A, 25) 
+FINISH
+
+•	void f4() – Sort in descending order all students whose age is an odd number. Output in this case like that:
+OUTPUT
+(YX, 51) (X, 31) (F, 28) (E, 51) (C, 99) (B, 24) (A, 15) 
+(C, 99) (E, 53) (F, 28) (YX, 51) (X, 31) (B, 24) (A, 15)
+FINISH

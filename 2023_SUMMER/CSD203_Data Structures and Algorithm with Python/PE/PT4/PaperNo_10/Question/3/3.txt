@@ -1,0 +1,14 @@
+Question 3: (2 marks)
+In this question you should complete some methods in Graph.py file. 
+
+ The class Graph is the implementation of a graph. The following methods should be completed: 
+	void f1() - Perfom depth-first traversal from the vertex i=1 (the vertex B) but display vertices with their degrees are even number in bracket. Hint: copy depthFirst(…) and depth(...) to  depthFirst2(…) depth2(...) and modify them. Output in this case like that:
+OUTPUT
+B C H D G A E F I 
+B C(2) H(2) D(2) G(2) A(4) E F I 
+FINISH
+
+	void f2() – Supposed the given graph has Euler's cycle. Apply the pseudocode in the Graph.py file to write statements to find the Euler's cycle from the vertex 1 (B). Display vertices with their degrees are greater than 2 in bracket. Outpt in this case like that:
+OUTPUT
+B(4) D(4) E(4) D(4) C B(4) E(4) G(4) A(4) G(4) F A(4) B(4)
+FINISH

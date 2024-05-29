@@ -1,0 +1,29 @@
+Question 2: (4 marks)
+In this question you should complete some methods in  BSTree.py files. 
+The class Student with 2 data members: Name and Age is given and you do not need to edit it. The BSTree class is a binary search tree of Student objects. The variable Age is the key of the tree. The following methods should be completed:
+ 
+•	void insert(name, age) - check if name start with = “X” (no case sensitive) or age <15 then do nothing, otherwise insert new student with Name=name, Age = age to the tree. 
+
+•	void f1() – You do not need to edit this function. Your task is to complete the insert(...) function above only. Output in this case like that:
+OUTPUT
+(A, 25) (B, 16) (F, 15) (C, 23) (E, 24) (D, 36) (Y, 105) 
+(F, 15) (B, 16) (C, 23) (E, 24) (A, 25) (D, 36) (Y, 105) 
+FINISH
+
+•	void f2() – Perform in-order traversal from the root but display only the nodes having age is an even number. Hint: Copy the function postVisit(...)  to postVisit2(...) and modify it. Output in this case like that:
+OUTPUT
+(F, 15) (G, 18) (E, 24) (C, 23) (B, 16) (Y, 105) (D, 36) (A, 25) 
+(G, 18) (E, 24) (B, 16) (D, 36) 
+FINISH
+
+•	void f3() – Perform pre-Order traversal from the root and delete by Merging from left child (selected left child) the first node having left child and age is a square number. Output in this case like that:
+OUTPUT
+(A, 25) (B, 16) (F, 15) (C, 23) (G, 18) (E, 24) (D, 36) (Y, 32) 
+(B, 16) (F, 15) (C, 23) (G, 18) (E, 24) (D, 36) (Y, 32) 
+FINISH
+
+•	void f4() – Perform In-order traversal from the root and find the first node p having left child and age is an odd number. Rotate p to right about its’ left child. Output in this case like that:
+OUTPUT
+(A, 25) (B, 16) (D, 36) (F, 15) (C, 23) (Y, 32) (G, 18) (E, 24) 
+(B, 16) (F, 15) (A, 25) (C, 23) (D, 36) (G, 18) (E, 24) (Y, 32) 
+FINISH

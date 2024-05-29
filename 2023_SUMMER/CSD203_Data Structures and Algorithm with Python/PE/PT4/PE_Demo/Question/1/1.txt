@@ -1,0 +1,28 @@
+Question 1:(4 marks)
+In this question you should complete some methods in MyList.py file. 
+The class Student with 2 data members: Name and Age is given and you do not need to edit it. The MyList class is a linked list of Customer objects. The following methods should be completed:
+
+•	void addLast(self, name, age) - check if name end with “X” or age >90 then do nothing, otherwise add new Customer with Name=name, Age=age to the first of the list. (Age can get arbitrary value, even negative).
+
+•	void f1() – This method is used to test the addLast methode above. You do not need to edit this function. Output in this case like that:
+OUTPUT
+(E, 15) (F, 23) (DZ, 43) (E, 52) (F, 26) (K, 30) (XYZ, 5) 
+FINISH
+
+•	void f2() – There are given objects Z. You should write statements in method addNode(self, name, age) so that Z will be before the second student having age is an odd number. Output in this case like that:
+OUTPUT
+(E, 15) (F, 23) (DZ, 43) (C, 8) (E, 52) (F, 26) (K, 30) (XYZ, 5) 
+(E, 15) (Z, 20) (F, 23) (DZ, 43) (C, 8) (E, 52) (F, 26) (K, 30) (XYZ, 5) 
+FINISH
+
+•	void f3() – Delete the first node having age is a perfect number. Output in this case like that:
+OUTPUT
+(A, 25) (B, 23) (D, 43) (E, 52) (F, 28) (XYZ, 5) 
+(A, 25) (B, 23) (D, 43) (E, 52) (XYZ, 5) 
+FINISH
+
+•	void f4() – Sort in ascending order all students whose age is not a Fibonacci number. Output in this case like that:
+OUTPUT
+(D, 26) (A, 30) (C, 21) (B, 27) (E, 36) (G, 89) (XYZ, 15) 
+(XYZ, 15) (D, 26) (C, 21) (B, 27) (A, 30) (G, 89) (E, 36) 
+FINISH

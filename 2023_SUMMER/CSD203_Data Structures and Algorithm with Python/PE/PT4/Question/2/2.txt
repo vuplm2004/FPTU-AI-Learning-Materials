@@ -1,0 +1,36 @@
+Question 2: (4 marks)
+In this question you should complete some methods in  BSTree.py files. 
+The class Product with 2 data members: Name and Price is given and you do not need to edit it. The BSTree class is a binary search tree of Student objects. The variable Price is the key of the tree. The following methods should be completed:
+ 
+•	void insert(name, price) - check if name start with = “G” or price < 0 then do nothing, otherwise insert new student with Name=name, Price = price to the tree. 
+
+•	void f1() – You do not need to edit this function. Your task is to complete the insert(...) function above only. Output in this case like that:
+OUTPUT
+(A, 35) (B, 26) (E, 24) (F, 25) (C, 33) (X, 56) (Y, 105) 
+(E, 24) (F, 25) (B, 26) (C, 33) (A, 35) (X, 56) (Y, 105) 
+FINISH
+
+•	void f2() – Perform in-order traversal from the root but display only the nodes having price is an odd number and with its height in (). Output in this case like that:
+•	Hint:
+def height(self, node):
+        if node is None:
+            return 0
+        left_height = self.height(node.left)
+        right_height = self.height(node.right)
+        return max(left_height, right_height) + 1
+OUTPUT
+(B, 21) (E, 24) (F, 25) (C, 32) (A, 34) (D, 36) (X, 56) (Y, 99) 
+(F, 25)(1) (B, 21)(4) (Y, 99)(1)
+FINISH
+
+•	void f3() – Perform post-Order traversal from the root and delete by Copy from left child (selectedleft child) the second node having left children and price is a Fibonacci. Output in this case like that:
+OUTPUT
+(H, 15) (Y, 18) (E, 17) (C, 21) (Z, 28) (AQ, 32) (F, 30) (D, 34) (B, 45) (A, 25) 
+(H, 15) (Y, 18) (E, 17) (C, 21) (Z, 28) (F, 30) (AQ, 32) (B, 45) (A, 25)
+FINISH
+
+•	void f4() – Perform breath traversal from the root and find the first node p having both child and price is a perfect number. Rotate p to left about its’ right child. Output in this case like that:
+OUTPUT
+(A, 25) (B, 16) (D, 28) (F, 15) (C, 23) (Y, 26) (X, 56) (E, 24) 
+(A, 25) (B, 16) (X, 56) (F, 15) (C, 23) (D, 28) (E, 24) (Y, 26)
+FINISH

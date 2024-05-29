@@ -1,0 +1,75 @@
+- 2 file gồm Linked List và Tree.
+
+
+
+Với file Linked List:
+***Lưu ý về file***
+Để ý file Student.py hoặc Customer.py để thay đổi Class, thuộc tính: name, age -> ... (Nhớ viết hoa)
+
+
+
+Q1: 
+###########
+addFirst hoặc addLast: Đã có sẵn, chỉ cần dùng theo điều kiện:
+###########
+- Ví dụ: end with 'Z' and age>120, do nothing -> name[-1] != 'Z' and age <= 120: do sth
+
+###########
+add ở giữa:
+###########
+- Để ý các cụm "after the last" hay "before the first" trong đề để sử dụng source.
+- Nếu có điều kiện đặc biệt -> ở file điều kiện. (khả năng cao fibonacci hoặc perfect number).
+- Để ý odd, even để sửa %2 == 0 hoặc != 0.
+*Lừa* Bthg: def f2(self, name='', salary=-1) -> def f2(self, Z)
+-> Phải sửa newnode = Node(data = Student(name,age)) thành Node(Z)
+
+
+Q2: 
+###########
+insert
+###########
+*Lừa*: Bthg: def insert(self, name, age) -> def insert(a, name, age)
+-> Phải sửa hết các self. trong source thành a.
+
+- Sửa Car(name, price) thành Student(name,age)
+- Sửa điều kiện theo bài.
+- Sửa key (nếu có id thì key là id): price < current.data.Price -> age < current.data.Age
+
+##########
+f2
+##########
+- Copy postOrder hoặc inOrder xuống f2 *Để bằng dòng f2, không thụt vào*
+- Xóa visit trong Order, paste cái print trong hàm visit vào.
+- Sửa tên thành postOrder2
+- ***Điều kiện luôn ở trên dòng print***
+- Gọi hàm:
+def f2(self):
+	self.postOrder2(self.root) <======
+	print("") <=======
+def postOrder2(self,p):
+	..............
+
+##########
+f3
+##########
+- delete by Merging hoặc by Copy
+- Ví dụ: Merging right 
+-> copy toàn bộ delMergingRight (*Không sửa gì*)
+copy search_f3 (*Sửa theo điều kiện đề*)
+***Nếu điều kiện đặc biệt -> copy từ file điều kiện, để trên def search_f3 
+-> Điều kiện: if p.left and self.is_square(p.data.Age):
+
+- Sửa find_parent theo key: .Price -> .Age,... (để hàm ở cuối)
+
+- Gọi hàm:
+
+def f3(self):
+	p = self.search_f3()
+	self.delByMergingLeft(p)
+
+
+
+
+
+
+
